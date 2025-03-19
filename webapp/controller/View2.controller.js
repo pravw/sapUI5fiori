@@ -9,8 +9,8 @@ sap.ui.define([
     "use strict";
 
     return BaseController.extend("oft.fiori.nov.controller.View2", {
-        onInit() {
-        },
+        // onInit() {
+        // },
 
 
 
@@ -37,7 +37,31 @@ onApprove: function(){
          }
 
     })
+},
+
+onValueHelp: function(){
+
+
+var oFragment =  new sap.ui.xmlfragment("oft.fiori.nov.fragments.spiderman");
+this.getView().addDependent(oFragment);
+oFragment.bindAggregation("items",{
+    path:"/cities",
+    template: new sap.m.StandardListItem( {
+        description:"{cityName}",
+        title:"{famous}"
+ })
+
+
+
+});
+
+
+
+
+
+    oFragment.open();
 }
+
 
 
 

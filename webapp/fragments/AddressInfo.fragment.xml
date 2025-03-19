@@ -1,0 +1,58 @@
+<!-- <core:FragmentDefinition  id="idFrg"  xmlns:core="sap.ui.core" xmlns="sap.m"  xmlns:form="sap.ui.layout.form">
+<form:SimpleForm id="id">
+<Label id="idLab"></Label>
+
+
+
+
+></form:SimpleForm>
+
+</core:FragmentDefinition> -->
+
+
+
+
+
+<core:FragmentDefinition 
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<VBox id="idVB"class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplayColumn_oneGroup234"
+			editable="false"
+			layout="ColumnLayout"
+			title="Address"
+			columnsM="2"
+			columnsL="3"
+			columnsXL="4"
+			>
+			<f:content>
+				<Label id="idLbl0" text="Name" />
+				<Text id="nameText" text="{SupplierName}" />
+				<Label  id="idLbl1" text="Street/No." />
+				<Text  id="idtx1" text="{Street} {HouseNumber}" />
+				<Label id="idLbl2" text="ZIP Code/City" />
+				<Text id="idtx2" text="{ZIPCode} {City}" />
+				<Label id="idLbl3" text="Country" />
+				<Text id="countryText" text="{Country}" />
+				<Label id="idLbl4" text="Web" />
+				<Link  id="idLk" text="Url" href="{Url}" />
+				<Label id="idLbl5" text="Twitter" />
+				<Text id="idtx4" text="{Twitter}" />
+				<Label id="idLbl6" text="Email" />
+				<Text id="idtx5" text="{Email}" />
+				<Label   id="idLbl7" text="Tel." />
+				<Text id="idtx6" text="{Tel}" />
+				<Label id="idLbl8" text="SMS" />
+				<Text id="idtx7" text="{Sms}" />
+				<Label id="idLbl9" text="Mobile" />
+				<Text id="idtx8" text="{Mobile}" />
+				<Label id="idLbl10" text="Pager" />
+				<Text id="idtx9" text="{Pager}" />
+				<Label id="idLbl11" text="Fax" />
+				<Text id="idtx10" text="{Fax}" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</core:FragmentDefinition>

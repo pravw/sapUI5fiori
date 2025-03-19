@@ -7,8 +7,9 @@ sap.ui.define([
     "use strict";
 
     return BaseController.extend("oft.fiori.nov.controller.View1", {
-        // onInit() {
-        // },
+        onInit() {
+            
+        },
 
         onItemPress: function(oEvent){
 
@@ -24,6 +25,28 @@ sap.ui.define([
 
 
 
+        },
+        onFilters: function(oEvent){
+            sap.m.MessageBox.confirm("this page is under construction");
+
+
+            // var oFragment =  new sap.ui.xmlfragment("oft.fiori.nov.fragments.spiderman",);
+            // this.getView().addDependent(oFragment);
+            // oFragment.bindAggregation("items",{
+            //     path:"/suppliers",
+            //     template: new sap.m.StandardListItem( {
+            //         description:"{famous}",
+            //         title:"{famous}"
+
+
+            //  })
+            // });
+
+
+
+          
+            
+                oFragment.open();
         },
 
 

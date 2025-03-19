@@ -60,8 +60,8 @@
       <footer>
 <Toolbar id="idTlbV">
 <!--   -->
-
-
+<ToolbarSpacer  id="idTbrspa"></ToolbarSpacer>
+<Button id="idb" icon="sap-icon://filter" press="onFilters"></Button>
 </Toolbar>
     </footer>
 
